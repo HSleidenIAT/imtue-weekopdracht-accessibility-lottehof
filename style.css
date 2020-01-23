@@ -15,13 +15,25 @@ body {
   min-width: 1024px;
   margin: 0 auto;
 }
-
-/* || typography */
-
-font[size="7"], font[size="6"], font[size="5"] {
+h1{
   font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
+  font-size: 40px;
+
 }
+h2{
+  font-family: 'Sonsie One', cursive;
+  color: #2a2a2a;
+  font-size: 34px;
+  text-align: center;
+
+}
+p{
+  font-size: 20px;
+}
+/* || typography */
+
+
 
 p, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -31,28 +43,33 @@ p, input, li, table, label {
 font[size="7"] {
   font-size: 4rem;
   text-align: center;
-  color: white;
+  color: black;
   text-shadow: 2px 2px 10px black;
 }
 
-font[size="6"] {
+h2 {
   font-size: 3rem;
   text-align: center;
 }
 
-font[size="5"] {
+h3 {
   font-size: 2.2rem;
 }
+h4{
+  font-size: 2rem;
+}
 
-p, li, table {
+
+ li, table {
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
 /* || header layout */
 
-div[class="nav"], article, footer, .secondary {
-  background-color: green;
+div[class="nav"], article, footer {
+  background-color: #829ebd;
+
 }
 
 article, footer, .secondary {
@@ -86,13 +103,13 @@ div[class="nav"] li {
 
 div[class="nav"] a {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 24px;
   text-transform: uppercase;
   text-decoration: none;
   color: black;
 }
 
-div[class="nav"] .search {
+div[class="nav"] {
   flex: 1;
   display: flex;
   align-items: center;
@@ -100,21 +117,34 @@ div[class="nav"] .search {
   padding: 0 2em;
 }
 
-.search input {
-  font-size: 1.6rem;
+div[class="nav"] label{
+  position: absolute;
+  right: 22.3%;
+  font-size: 24px;
+}
+
+div[class="nav"] input{
+  position: absolute;
+  right: 15%;
+  height: 25px;
+}
+
+
+.search{
   height: 32px;
-}
+  width: 50px;
+  color: black;
+  background-color: #dde;
+  border-color: black;
+  margin-left: 230px;
 
-.search input[type="search"] {
-  flex: 3;
 }
-
-.search input[type="submit"] {
-  flex: 1;
-  margin-left: 1rem;
-  background: #333;
-  border: 0;
-  color: white;
+.submit{
+  height: 30px;
+  width: 200px;
+  background-color: #dde;
+  border-color: black;
+  margin-left: 28%;
 }
 
 /* || main layout */
@@ -126,9 +156,15 @@ main {
 article {
   flex: 5;
 }
-
+div[class="secondary"] a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
 .secondary {
   flex: 2;
+  color: black;
+  background-color: white;
 }
 
 footer {
