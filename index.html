@@ -20,7 +20,7 @@
       <h1>Welcome to our wildlife website</h1>
     </div>
 
-    <div class="nav">
+    <div class="nav"><!-- REVIEW: hier is een betere tag voor -->
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Our team</a></li>
@@ -29,7 +29,7 @@
       </ul>
 
       <label for="Search">Search:</label>
-  <input type="text" name="Search" id="Search" placeholder="Search">
+  <input type="text" name="Search" id="Search" placeholder="Search"> <!-- REVIEW: aria-label -->
   <button class="search" type="button" name="button">Go!</button>
 
 
@@ -73,10 +73,10 @@
 
 
 >>>>>>> development
-        <table>
+        <table><!-- REVIEW: summary of caption toevoegen -->
           <thead>
             <tr>
-              <td>Bear Type</td>
+              <td>Bear Type</td><!-- REVIEW: dit zijn celhoofden, hier is een speciale tag voor. Gebruik ook scope attribuut -->
               <td>Coat</td>
               <td>Adult size</td>
               <td>Habitat</td>
@@ -86,7 +86,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>Wild</td>
+              <td>Wild</td><!-- REVIEW: celhoofd -->
               <td>Brown or black</td>
               <td>1.4 to 2.8 meters</td>
               <td>Woods and forests</td>
@@ -94,7 +94,7 @@
               <td>Fish, meat, plants</td>
             </tr>
             <tr>
-              <td>Urban</td>
+              <td>Urban</td><!-- REVIEW: celhoofd -->
               <td>North Face</td>
               <td>18 to 22</td>
               <td>Condos and coffee shops</td>
@@ -147,7 +147,7 @@
 
         </aside>
         <section class="comments">
-          <div class="show-hide">Show comments</div>
+          <div class="show-hide">Show comments</div><!-- REVIEW: deze is nu nog niet keyboard accessible -->
 
           <div class="comment-wrapper">
 
@@ -163,7 +163,7 @@
               <div class="flex-pair">
 
                 <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <input type="text" id="fname" name="firstname" placeholder="Your name.."><!-- REVIEW: aria-label mist -->
 
               </div>
               <div class="flex-pair">
@@ -172,7 +172,7 @@
           </form>
               </div>
               <div>
-                <button type="submit" value="Submit comment" class="submit" name="button">Submit comment</button>
+                <button type="submit" value="Submit comment" class="submit" name="button">Submit comment</button><!-- REVIEW: als de submit button niet in het form element staat doet ie het niet -->
               </div>
             </form>
 
@@ -215,7 +215,7 @@
       <p>©Copyright 2050 by nobody. All rights reversed.</p>
     </footer>
 
-    
+
 
   </body>
 </html>
